@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нурэль — моё портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="top">
+        <a class="logo" href="#top">Нурэль.</a>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#process">Процесс</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contact">Контакты</a>
+            <button class="theme-toggle" id="theme-toggle" type="button">Сменить тему</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <p>Портфолио · Бишкек, Кыргызстан</p>
+                <h1>Привет, я <span>Нурэль</span></h1>
+                <h2>Начинающий веб-разработчик</h2>
+                <p>Изучаю веб-технологии и создаю сайты. Здесь я собрал свои проекты и немного рассказал о себе.</p>
+                <a class="button" href="#projects">Смотреть проекты</a>
+            </div>
+            <img src="images/nurel-photo.jpg" alt="Нурэль с друзьями">
+        </section>
+
+        <section class="about section" id="about">
+            <div>
+                <p class="label">01 · Обо мне</p>
+                <h2>Немного обо мне</h2>
+                <p>Я начинающий веб-разработчик из Бишкека. Сейчас я изучаю HTML и CSS и учусь создавать сайты. Мне нравится придумывать, как будет выглядеть страница, и собирать её из блоков.</p>
+                <p>В этом проекте я использовал HTML, CSS и JavaScript.</p>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+            <img src="images/dog-photo.jpg" alt="Мопс в очках">
+        </section>
+
+        <section class="section" id="process">
+            <p class="label">02 · Мой процесс</p>
+            <h2>Как я работаю</h2>
+            <div class="process-list">
+                <article class="card">
+                    <h3>1. Изучаю</h3>
+                    <p>Сначала разбираюсь, что должно быть на странице.</p>
+                </article>
+                <article class="card">
+                    <h3>2. Планирую</h3>
+                    <p>Решаю, где будут заголовки, текст и картинки.</p>
+                </article>
+                <article class="card">
+                    <h3>3. Создаю</h3>
+                    <p>Добавляю содержание в HTML и оформляю его в CSS.</p>
+                </article>
+                <article class="card">
+                    <h3>4. Проверяю</h3>
+                    <p>Смотрю, чтобы страница правильно отображалась на экране.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <p class="label">03 · Мои работы</p>
+            <h2>Мои проекты</h2>
+            <div class="project-filters" aria-label="Фильтр проектов">
+                <button type="button" data-filter="all">Все</button>
+                <button type="button" data-filter="python">Python</button>
+                <button type="button" data-filter="web">Сайты</button>
+                <button type="button" data-filter="portfolio">Портфолио</button>
+            </div>
+            <div class="projects">
+                <article class="project card" data-category="python">
+                    <div class="project-picture purple">Python</div>
+                    <p>Программа · Python</p>
+                    <h3>Генератор паролей</h3>
+                    <p>Программа создаёт пароль заданной длины из разных символов.</p>
+                    <a href="https://github.com/viopae1337/random-password-generator" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                </article>
+
+                <article class="project card" data-category="web">
+                    <div class="project-picture green">Туризм клуб</div>
+                    <p>Учебный сайт · HTML и CSS</p>
+                    <h3>Туристический клуб</h3>
+                    <p>Учебный сайт из трёх страниц. Форма на сайте не отправляет данные.</p>
+                    <a href="https://github.com/viopae1337/10-2-2026project-remake" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                </article>
+
+                <article class="project card" data-category="portfolio">
+                    <div class="project-picture yellow">Моё портфолио</div>
+                    <p>Личная страница · HTML</p>
+                    <h3>Первое портфолио</h3>
+                    <p>Простая страница обо мне с описанием и ссылками на соцсети.</p>
+                    <a href="https://github.com/viopae1337/portfolio1337" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <p class="label">04 · Контакты</p>
+            <h2>Давайте знакомиться!</h2>
+            <p>Буду рад новым знакомствам и интересным разговорам.</p>
+            <a class="button" href="https://t.me/viopae1221" target="_blank" rel="noopener noreferrer">Написать в Телеграм</a>
+            <div class="contact-links">
+                <a href="https://t.me/viopae1221" target="_blank" rel="noopener noreferrer">Телеграм</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo" href="#top">Нурэль.</a>
+        <p>© <span id="current-year"></span> Нурэль</p>
+        <a id="back-to-top" href="#top">Наверх ↑</a>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
